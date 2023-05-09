@@ -226,7 +226,7 @@ BEGIN
 	IF NEW.salario > OLD.salario
 	THEN 
 	  
-	  IF new.salario < (new.salario +(new.salario *0.5))
+	  IF new.salario < (old.salario +(old.salario *0.5))
 	  
 	  	THEN 
 			RAISE Notice 'Salario atualizado %', new.salario;
